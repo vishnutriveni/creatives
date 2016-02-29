@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    var userTicked = true;
+
     ga('send', 'event', 'bmw3series_XIan', 'ad_unit_load');
 
     $('input').bind('click', function() {
@@ -80,7 +82,11 @@ $(document).ready(function() {
             $("#" + tempName).removeClass("error");
         }
 
-        
+        if(!userTicked){
+            flag = true;
+            $("#tick").addClass("error");
+            return;
+        }
 
         console.log(flag);
 
@@ -168,6 +174,18 @@ $(document).ready(function() {
             }
             console.log(sliderName3);
             sliderActiveSub = sliderName3;
+        }
+    });
+
+    $("#tick").click(function(){
+        if(userTicked){
+            $("#emptyBox").show();
+            $("#tickBox").hide();
+            userTicked = false;
+        }else{
+            $("#emptyBox").hide();
+            $("#tickBox").show();
+            userTicked = true;
         }
     });
 
