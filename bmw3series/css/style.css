@@ -329,7 +329,7 @@ position: absolute;
     top: 730px;
     width: 215px;
     height: 17px;
-    left: 82px;
+    left: 80px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
@@ -339,7 +339,7 @@ position: absolute;
     top: 763px;
     width: 222px;
     height: 19px;
-    left: 80px;
+    left: 85px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
@@ -349,7 +349,7 @@ position: absolute;
     top: 797px;
     width: 224px;
     height: 19px;
-    left: 79px;
+    left: 86px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
@@ -359,8 +359,16 @@ position: absolute;
     top: 829px;
     width: 212px;
     height: 19px;
-    left: 92px;
+    left: 97px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
+}
+.hotspot {
+    position: absolute;
+    top: 901px;
+    width: 282px;
+    height: 42px;
+    left: 12px;
+    /* border: 1px solid red; */
 }

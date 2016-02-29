@@ -29,10 +29,13 @@ $(document).ready(function() {
 
     $("#submit").bind("click", function() {
         ga('send', 'event', 'bmw3series_XIan', 'user_form_submit_tap');
-        var name = $("#name").val(),
-            mobile = $("#mobile").val();
-        var carmodel = $("#carmodel").val(),
-            dealer = $("#dealer").val();
+        var appellation = $("#appellation").val();
+        var surname = $("#surname").val();
+        var name = $("#name").val();
+        var mobile = $("#mobile").val();
+        var province = $("#province").val();
+        var city = $("#city").val();
+        var dealer = $("#dealer").val();
 
         var submitFlag = true;
         var flag = false;
@@ -85,7 +88,7 @@ $(document).ready(function() {
             console.log(data);
             $.ajax({
                 type: "POST",
-                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_XIan_jan2016",
+                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series",
                 data: data,
                 complete: function() {},
                 // beforeSend:function(){
