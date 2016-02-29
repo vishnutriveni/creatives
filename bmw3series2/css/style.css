@@ -1,0 +1,399 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: 'NeutraText-Demi', Arial;
+    color: #ffffff;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'NeutraText-Demi', Arial;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.2em;
+    background: #ffffff;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+#wrapper {
+    width: 320px;
+    height: 963px;
+    position: relative;
+    overflow: hidden;
+    font-family: inherit;
+    margin: 0 auto;
+}
+
+
+/*--------------Custom pages -----------*/
+
+#initScreen {
+    display: none;
+    height: 100%;
+    background: url('../images/640.jpg');
+    background-size: 100% 100%;
+    background-position: 0 0;
+    top: 0px;
+}
+
+#exitScreen {
+    display: none;
+}
+
+#loader img {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+#exitLink {
+    position: absolute;
+    z-index: 2;
+    top: 91px;
+    left: 58px;
+    width: 199px;
+    height: 28px;
+}
+
+#skipPage1,
+#skipPage2,
+#skipPage3 {
+    position: absolute;
+    z-index: 2;
+    left: 245px;
+    width: 70px;
+    height: 137px;
+}
+
+#skipPage1 {
+    top: 346px;
+}
+
+#skipPage2 {
+    top: 826px;
+}
+
+#skipPage3 {
+    top: 1413px;
+}
+
+input:focus,
+select:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.error {
+    border: 1px red solid !important;
+    border-radius: 0 !important;
+}
+
+#videohp {
+    position: absolute;
+    top: 236px;
+    height: 128px;
+    width: 318px;
+    left: 0px;
+    z-index: 1;
+}
+
+#videos,
+#thankyou {
+    width: 320px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+    display: none;
+}
+
+#onevideo {
+    position: absolute;
+    top: 207px;
+    left: 0px;
+    width: 320px;
+    height: 176px;
+}
+
+#overlay,
+#tyoverlay {
+    background: #000;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 568px;
+}
+
+#videospace {
+    position: absolute;
+    left: 12px;
+    top: 142px;
+    width: 294px;
+    height: 170px;
+    z-index: 10;
+}
+
+#closebutton {
+    color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: 111px;
+    left: 296px;
+}
+
+#tyclosebutton {
+    color: #FFF;
+    z-index: 1;
+    position: absolute;
+    top: 111px;
+    left: 296px;
+}
+
+#tytext {
+    z-index: 5;
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    width: 320px;
+    height: 176px;
+}
+.swiper-container{
+  width: 286px;
+  height: 161px;
+  margin-left: auto;
+  margin-right: auto;
+  top:90px;
+}
+.swiper-slide img{
+    width: 286px;
+    height: 161px;
+}
+.swiper-container{
+  width: 286px;
+  height: 161px;
+  margin-left: auto;
+  margin-right: auto;
+  top:419px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+        /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination{
+    width:320px;
+    height:30px;
+    top:585px;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #ffffff;
+    border: 1px solid #808080;
+}
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+/*    background: #000;
+*/    opacity: 0.5;
+    margin-left: 9px;
+    border: 1px solid black;
+}
+input,select{
+    border:1px solid red;
+}
+#appellation{
+position: absolute;
+    top: 665px;
+    width: 242px;
+    height: 17px;
+    left: 55px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    padding-left: 3px;
+}
+#surname{
+position: absolute;
+    top: 697px;
+    width: 60px;
+    height: 17px;
+    left: 57px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    padding-left: 3px;
+}
+#name{
+    position: absolute;
+    top: 697px;
+    width: 136px;
+    height: 17px;
+    left: 161px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    padding-left: 3px;
+}
+#mobile{
+    position: absolute;
+    top: 730px;
+    width: 214px;
+    height: 17px;
+    left: 82px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+    padding-left: 3px;
+}
+#province{
+    position: absolute;
+    top: 763px;
+    width: 222px;
+    height: 19px;
+    left: 85px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+}
+#city{
+    position: absolute;
+    top: 797px;
+    width: 224px;
+    height: 19px;
+    left: 86px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+}
+#dealer{
+    position: absolute;
+    top: 829px;
+    width: 212px;
+    height: 19px;
+    left: 97px;
+    -webkit-appearance: none;
+    border: none;
+    background: transparent;
+}
+.hotspot {
+    position: absolute;
+    top: 901px;
+    width: 282px;
+    height: 42px;
+    left: 12px;
+    /* border: 1px solid red; */
+}
+#tickBox img,#emptyBox img{
+    width: 26px;
+    height: 36px;
+}
+#tickBox,#emptyBox{
+    position: absolute;
+    top: 854px;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+}
+#emptyBox{
+    display: none;
+}
+#tick{
+    position: absolute;
+    top: 858px;
+    width: 21px;
+    height: 21px;
+    left: 14px;
+}

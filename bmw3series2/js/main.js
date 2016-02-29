@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var userTicked = true;
 
-    ga('send', 'event', 'bmw3series_XIan', 'ad_unit_load');
+    ga('send', 'event', 'bmw3series_Sichuan', 'ad_unit_load');
 
     $('input').bind('click', function() {
         $(this).focus();
@@ -13,7 +13,7 @@ $(document).ready(function() {
     function notifyLoad() {
         $("#initScreen").css("display", "block");
         $("#loader").css("display", "none");
-        ga('send', 'event', 'bmw3series_XIan', 'images_loading_complete');
+        ga('send', 'event', 'bmw3series_Sichuan', 'images_loading_complete');
     }
 
     function loadImages() {
@@ -23,14 +23,14 @@ $(document).ready(function() {
     }
 
     // $("#exitLink").click(function() {
-    //     ga('send', 'event', 'bmw3series_XIan', 'exit_link_tap');
+    //     ga('send', 'event', 'bmw3series_Sichuan', 'exit_link_tap');
     //     window.open("http://www.volvocars.com/zh-cn/cars/new-models/xc60", "_blank")
     // });
 
     loadImages();
 
     $("#submit").bind("click", function() {
-        ga('send', 'event', 'bmw3series_XIan', 'user_form_submit_tap');
+        ga('send', 'event', 'bmw3series_Sichuan', 'user_form_submit_tap');
         var appellation = $("#appellation").val();
         var surname = $("#surname").val();
         var name = $("#name").val();
@@ -95,7 +95,7 @@ $(document).ready(function() {
             console.log(data);
             $.ajax({
                 type: "POST",
-                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_xian",
+                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_Sichuan",
                 data: data,
                 complete: function() {},
                 // beforeSend:function(){
@@ -109,7 +109,7 @@ $(document).ready(function() {
                     $("#thankyou").css("zIndex", 1);
                     $("#tyoverlay").css("zIndex", 1);
                     $("#thankyoutext").css("zIndex", 1);
-                    ga('send', 'event', 'bmw3series_XIan', 'form_submit_success');
+                    ga('send', 'event', 'bmw3series_Sichuan', 'form_submit_success');
                 }
             });
         }
@@ -121,7 +121,7 @@ $(document).ready(function() {
         $("#mobile").val("");
         $("#carmodel").val("");
         $("#dealer").val("");
-        ga('send', 'event', 'bmw3series_XIan', 'thankyou_page_close');
+        ga('send', 'event', 'bmw3series_Sichuan', 'thankyou_page_close');
         $("#thankyou").css("display", "none");
         $("#thankyou").css("zIndex", -1);
         $("#tyoverlay").css("zIndex", -1);
@@ -129,7 +129,7 @@ $(document).ready(function() {
     });
 
     $("#videohp").click(function(){
-        ga('send', 'event', 'bmw3series_XIan', 'video_thumbnail_tap');
+        ga('send', 'event', 'bmw3series_Sichuan', 'video_thumbnail_tap');
         $("#videos").css("display", "block");
         $("#videos").css("zIndex", 1);
         $("#overlay").css("zIndex", 1);
@@ -139,7 +139,7 @@ $(document).ready(function() {
     });
 
     $("#overlay,#closebutton").click(function() {
-        ga('send', 'event', 'bmw3series_XIan', 'video_close_tap');
+        ga('send', 'event', 'bmw3series_Sichuan', 'video_close_tap');
         console.log("Clicked overlay");
         $("#onevideo")[0].pause();
         $("#videos").css("zIndex", -1);
@@ -161,26 +161,26 @@ $(document).ready(function() {
 
             if (slideStas == 0 || slideStas == 5) {
                 sliderName3 = "frame_5";
-                ga('send', 'event', 'bmw3series_XIan', sliderName3 + '_show');
+                ga('send', 'event', 'bmw3series_Sichuan', sliderName3 + '_show');
             }else if (slideStas == 1 || slideStas == 6 ) {
                 sliderName3 = "frame_1";
-                ga('send', 'event', 'bmw3series_XIan', sliderName3 + '_show');
+                ga('send', 'event', 'bmw3series_Sichuan', sliderName3 + '_show');
             }else if (slideStas == 2) {
                 sliderName3 = "frame_2";
-                ga('send', 'event', 'bmw3series_XIan', sliderName3 + '_show');
+                ga('send', 'event', 'bmw3series_Sichuan', sliderName3 + '_show');
             }else if (slideStas == 3 ) {
                 sliderName3 = "frame_3";
-                ga('send', 'event', 'bmw3series_XIan', sliderName3 + '_show');
+                ga('send', 'event', 'bmw3series_Sichuan', sliderName3 + '_show');
             }else if (slideStas == 4 ) {
                 sliderName3 = "frame_4";
-                ga('send', 'event', 'bmw3series_XIan', sliderName3 + '_show');
+                ga('send', 'event', 'bmw3series_Sichuan', sliderName3 + '_show');
             }
         }
     });
 
     $("#tick").click(function(){
         if(userTicked){
-            ga('send', 'event', 'bmw3series_XIan', 'agree_untick');
+            ga('send', 'event', 'bmw3series_Sichuan', 'agree_untick');
             $("#emptyBox").show();
             $("#tickBox").hide();
             userTicked = false;
@@ -188,7 +188,7 @@ $(document).ready(function() {
             $("#emptyBox").hide();
             $("#tickBox").show();
             userTicked = true;
-            ga('send', 'event', 'bmw3series_XIan', 'agree_tick');
+            ga('send', 'event', 'bmw3series_Sichuan', 'agree_tick');
         }
     });
 
