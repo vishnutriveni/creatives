@@ -95,7 +95,7 @@ $(document).ready(function() {
             console.log(data);
             $.ajax({
                 type: "POST",
-                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_Sichuan",
+                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_sichuan",
                 data: data,
                 complete: function() {},
                 // beforeSend:function(){
