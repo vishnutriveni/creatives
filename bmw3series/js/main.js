@@ -44,26 +44,8 @@ $(document).ready(function() {
 
         submitFlag = false;
 
-        var tempName = "";
-        if ($("#name").val().length == 0 || $("#name").val().length > 21) {
-            flag = true;
-            $("#name").addClass("error");
-            return;
-        } else {
-            $("#name").removeClass("error");
-        }
-
-
-        if ($("#mobile").val().length == 0) {
-            flag = true;
-            $("#mobile").addClass("error");
-            return;
-        } else {
-            $("#mobile").removeClass("error");
-        }
-
-        tempName = "carmodel";
-        if ($("#" + tempName).val().length == 0 || $("#" + tempName).val().length == -1) {
+        tempName = "appellation";
+        if ($("#" + tempName).val().length == 0) {
             flag = true;
             $("#" + tempName).addClass("error");
             return;
@@ -71,8 +53,8 @@ $(document).ready(function() {
             $("#" + tempName).removeClass("error");
         }
 
-        tempName = "dealer";
-        if ($("#" + tempName).val().length == 0 || $("#" + tempName).val().length == -1) {
+        tempName = "surname";
+        if ($("#" + tempName).val().length == 0) {
             flag = true;
             $("#" + tempName).addClass("error");
             return;
@@ -80,15 +62,34 @@ $(document).ready(function() {
             $("#" + tempName).removeClass("error");
         }
 
+        tempName = "name";
+        if ($("#" + tempName).val().length == 0) {
+            flag = true;
+            $("#" + tempName).addClass("error");
+            return;
+        } else {
+            $("#" + tempName).removeClass("error");
+        }
+
+        tempName = "mobile";
+        if ($("#" + tempName).val().length == 0) {
+            flag = true;
+            $("#" + tempName).addClass("error");
+            return;
+        } else {
+            $("#" + tempName).removeClass("error");
+        }
+
+        
 
         console.log(flag);
 
         if (flag != true) {
-            var data = "&name=" + name + '&mobile=' + mobile + '&carmodel=' + carmodel + '&dealer=' + dealer;
+            var data = "appellation=" + appellation + '&surname=' + surname + '&name=' + name + '&mobile=' + mobile + '&province=' + province + '&city=' + city + '&dealer=' + dealer;
             console.log(data);
             $.ajax({
                 type: "POST",
-                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series",
+                url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_xian",
                 data: data,
                 complete: function() {},
                 // beforeSend:function(){

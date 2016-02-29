@@ -299,10 +299,11 @@ position: absolute;
     top: 665px;
     width: 242px;
     height: 17px;
-    left: 57px;
+    left: 55px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
+    padding-left: 3px;
 }
 #surname{
 position: absolute;
@@ -313,9 +314,10 @@ position: absolute;
     -webkit-appearance: none;
     border: none;
     background: transparent;
+    padding-left: 3px;
 }
 #name{
-position: absolute;
+    position: absolute;
     top: 697px;
     width: 136px;
     height: 17px;
@@ -323,16 +325,18 @@ position: absolute;
     -webkit-appearance: none;
     border: none;
     background: transparent;
+    padding-left: 3px;
 }
 #mobile{
     position: absolute;
     top: 730px;
-    width: 218px;
+    width: 214px;
     height: 17px;
-    left: 80px;
+    left: 82px;
     -webkit-appearance: none;
     border: none;
     background: transparent;
+    padding-left: 3px;
 }
 #province{
     position: absolute;
