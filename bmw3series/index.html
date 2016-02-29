@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Changan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=320, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.chained.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70706301-25', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="loader">
+            <img src="images/loading.gif" />
+        </div>
+
+        <div id="initScreen">
+
+        <div id="carCarousel" class="carouselPage">
+            <div class="swiper-container carCarousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/f1.jpg"></div>
+                    <div class="swiper-slide"><img src="images/f2.jpg"></div>
+                    <div class="swiper-slide"><img src="images/f3.jpg"></div>
+                    <div class="swiper-slide"><img src="images/f4.jpg"></div>
+                    <div class="swiper-slide"><img src="images/f5.jpg"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+            <!--Form starts here -->
+            <div id="form">
+                    <input type="text" name="appellation" id="appellation" placeholder="" class="raven">
+                    <input type="text" name="surname" id="surname" placeholder="" class="raven">
+                        <input type="text" name="name" id="name" placeholder="" class="raven">
+                        <input type="text" id="mobile" placeholder="" class="raven">
+                    <select id="province" name="province" class="raven">
+                        <option value="陕西">陕西</option>
+                    </select>
+                    <select name="city" id="city" class="raven">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <select name="dealer" id="dealer" class="raven">
+                        <option value="陕西金花">陕西金花</option>
+                        <option value="西安荣宝">西安荣宝</option>
+                        <option value="西安顺宝行">西安顺宝行</option>
+                        <option value="西安中宝">西安中宝</option>
+                        <option value="西安昌宝">西安昌宝</option>
+                        <option value="西安运通博宝">西安运通博宝</option>
+                    </select>
+                </div>
+                <div id="submit" class="hotspot"></div>
+            </div>
+            <div id="videohp"></div>
+        </div>
+        <div id="videos">
+            <div id="overlay"></div>
+            <div id="closebutton">X</div>
+            <video id="onevideo" type='video/mp4' webkit-playsinline></video>
+        </div>
+        <div id="thankyou">
+            <div id="tyoverlay"></div>
+            <div id="tyclosebutton">X</div>
+            <div id="tytext" style="color:#fff;">感谢您的关注，我们的工作人员会尽快和您取得联系，谢谢。</div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+</body>
+</html>
+
+
+
+
+
