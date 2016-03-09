@@ -201,7 +201,7 @@ select:focus {
     top: 0;
     left: 0;
     width: 320px;
-    height: 568px;
+    height: 963px;
 }
 
 #videospace {
@@ -225,14 +225,14 @@ select:focus {
     color: #FFF;
     z-index: 1;
     position: absolute;
-    top: 111px;
+    top: 600px;
     left: 296px;
 }
 
 #tytext {
     z-index: 5;
     position: absolute;
-    top: 240px;
+    top: 700px;
     left: 10px;
     width: 320px;
     height: 176px;

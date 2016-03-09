@@ -98,19 +98,19 @@ $(document).ready(function() {
                 url: "http://rm.inmobi.com/raven/submitdata.php?ravenEntity=bmw3series_sichuan",
                 data: data,
                 complete: function() {},
-                // beforeSend:function(){
-                //   $("#thankyou").css("display", "block");
-                //   $("#thankyou").css("zIndex", 1);
-                //   $("#tyoverlay").css("zIndex", 1);
-                //   $("#thankyoutext").css("zIndex", 1);
-                // },
-                success: function(data) {
-                    $("#thankyou").css("display", "block");
-                    $("#thankyou").css("zIndex", 1);
-                    $("#tyoverlay").css("zIndex", 1);
-                    $("#thankyoutext").css("zIndex", 1);
-                    ga('send', 'event', 'bmw3series_Sichuan', 'form_submit_success');
-                }
+                beforeSend:function(){
+                  $("#thankyou").css("display", "block");
+                  $("#thankyou").css("zIndex", 1);
+                  $("#tyoverlay").css("zIndex", 1);
+                  $("#thankyoutext").css("zIndex", 1);
+                },
+                // success: function(data) {
+                //     $("#thankyou").css("display", "block");
+                //     $("#thankyou").css("zIndex", 1);
+                //     $("#tyoverlay").css("zIndex", 1);
+                //     $("#thankyoutext").css("zIndex", 1);
+                //     ga('send', 'event', 'bmw3series_Sichuan', 'form_submit_success');
+                // }
             });
         }
     });
