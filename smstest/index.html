@@ -5,18 +5,8 @@
 	<title>SMS Test</title>
 </head>
 <body>
-<script>
-	
-	var ua = navigator.userAgent.toLowerCase();
-var url;
-        
-if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1)
-    url = "sms:;body=" + encodeURIComponent("I'm at " + mapUrl + " @ " + pos.Address);
-else
-    url = "sms:?body=" + encodeURIComponent("I'm at " + mapUrl + " @ " + pos.Address);
-
-location.href = url;
-</script>
+	<a href="sms:+918606705347?body=Hello World.">SMS For Android</a><p><p>
+	<a href="sms:+918606705347;body=Hello World.">SMS For iOS</a>
 
 </body>
 </html>
